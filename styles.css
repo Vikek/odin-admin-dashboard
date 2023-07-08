@@ -28,6 +28,13 @@ html, body {
 
 .header {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header>* {
+    padding: 10px;
 }
 
 .content {
