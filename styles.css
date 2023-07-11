@@ -39,4 +39,16 @@ html, body {
 
 .content {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.content-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
