@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+:root {
+    --main-bg-color: #dee9f5;
+    --secondary-bg-color: white;
+    --sidebar-bg-color: #289eec;
+    --sidebar-color: white;
+}
+
 html, body {
     height: 100%;
 }
@@ -12,6 +19,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    background-color: var(--main-bg-color);
 }
 
 .sidebar {
@@ -20,6 +28,8 @@ html, body {
     display: grid;
     grid-template-rows: repeat(3, auto) 1fr;
     gap: 10%;
+    background-color: var(--sidebar-bg-color);
+    color: var(--sidebar-color);
 }
 
 .sidebar>* {
@@ -31,6 +41,7 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--secondary-bg-color);
 }
 
 .header>* {
