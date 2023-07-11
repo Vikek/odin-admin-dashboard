@@ -16,6 +16,7 @@ html, body {
 
 .container {
     height: 100%;
+    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
@@ -33,7 +34,39 @@ html, body {
 }
 
 .sidebar>* {
-    padding: 10px;
+    padding: 35px;
+}
+
+.sidebar-header>div {
+    display: flex;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.sidebar-navigation>div, .sidebar-options>div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar-header svg {
+    width: 40px;
+    height: auto;
+    position: relative;
+    bottom: 6px;
+    right: 6px;
+    fill: var(--sidebar-color);
+}
+
+.sidebar-navigation svg, .sidebar-options svg{
+    width: 24px;
+    height: auto;
+    position: relative;
+    bottom: 2px;
+    fill: var(--sidebar-color);
 }
 
 .header {
