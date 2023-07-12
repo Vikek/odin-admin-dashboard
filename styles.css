@@ -78,7 +78,42 @@ html, body {
 }
 
 .header>* {
-    padding: 10px;
+    padding: 24px 46px;
+}
+
+.header-searchbar {
+    display: flex;
+    gap: 16px;
+}
+
+.header-searchbar [type="search"] {
+    background-color: var(--main-bg-color);
+    border-style: none;
+    border-radius: 20px;
+    width: 500px;
+    height: 28px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.header-searchbar [type="search"]:focus {
+    outline: none;
+    border: 2px solid var(--sidebar-bg-color);
+}
+
+.header-searchbar svg {
+    width: 24px;
+    height: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+.header-notifications button {
+    width: 24px;
+    height: auto;
+    background: none;
+    outline: none;
+    border: none;
 }
 
 .content {
