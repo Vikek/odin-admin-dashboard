@@ -75,14 +75,13 @@ html, body {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--secondary-bg-color);
-}
-
-.header>* {
-    padding: 24px 46px;
+    padding: 0px 70px;
+    box-shadow: 0px 3px 5px gray;
 }
 
 .header-searchbar {
     display: flex;
+    align-items: center;
     gap: 16px;
 }
 
@@ -104,8 +103,15 @@ html, body {
 .header-searchbar svg {
     width: 24px;
     height: auto;
-    position: relative;
-    bottom: 10px;
+}
+
+.header-notifications {
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: end;
 }
 
 .header-notifications button {
@@ -114,6 +120,56 @@ html, body {
     background: none;
     outline: none;
     border: none;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/assets/pictures/adriano-pinto-j4VUYdQJEj8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-user-info .header-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.header-user-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.header-user-info-text div:first-child {
+    font-size: 14px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-buttons button {
+    border: none;
+    width: 86px;
+    height: 34px;
+    background-color: var(--sidebar-bg-color);
+    color: var(--secondary-bg-color);
+    border-radius: 16px;
 }
 
 .content {
