@@ -22,6 +22,7 @@ html, body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
     background-color: var(--main-bg-color);
+    overflow: auto;
 }
 
 /*//SIDEBAR//*/
@@ -99,7 +100,7 @@ html, body {
     background-color: var(--main-bg-color);
     border-style: none;
     border-radius: 20px;
-    width: 500px;
+    width: 80%;
     height: 28px;
     padding-left: 10px;
     font-size: 16px;
@@ -200,14 +201,37 @@ html, body {
 
 .content-projects>h3 {
     grid-column: 1 / -1;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     color: var(--text-color-dark);
 }
 
 .content-projects>div {
     background-color: var(--secondary-bg-color);
-    border-radius: 16px;
-    padding: 10px;
+    color: var(--text-color-dark);
+    border-left: 8px solid #ecc518;
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-projects .projects-buttons {
+    display: flex;
+    gap: 16px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.content-projects .projects-buttons button {
+    border: none;
+    background: none;
+}
+
+.content-projects svg {
+    width: 24px;
+    height: auto;
+    fill: var(--text-color-dark);
 }
 
 .content-sidebar {
@@ -219,6 +243,6 @@ html, body {
 
 .content-sidebar>div {
     background-color: var(--secondary-bg-color);
-    border-radius: 16px;
+    border-radius: 10px;
     padding: 10px;
 }
