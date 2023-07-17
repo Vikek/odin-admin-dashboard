@@ -82,7 +82,7 @@ html, body {
     grid-template-rows: 1fr 1fr;
     background-color: var(--secondary-bg-color);
     color: var(--text-color-dark);
-    padding: 0px 70px;
+    padding: 6px 70px;
     box-shadow: 0px 3px 5px gray;
 }
 
@@ -188,7 +188,7 @@ html, body {
 .content {
     grid-column: 2 / -1;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 }
 
 .content-projects {
@@ -244,5 +244,48 @@ html, body {
 .content-sidebar>div {
     background-color: var(--secondary-bg-color);
     border-radius: 10px;
+    padding: 20px;
+    display: grid;
+}
+
+.content-sidebar .content-announcements>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
+    gap: 6px;
+}
+
+.content-sidebar .content-announcements>div:nth-child(even) {
+    border-top: 2px solid #d1d5da9a;
+    border-bottom: 2px solid #d1d5da9a;
+}
+
+.content-sidebar>div p{
+    font-size: 12px;
+}
+
+.content-trending {
+    display: grid;
+}
+
+.content-trending .trending-profile {
+    align-self: center;
+    display: flex;
+    gap: 6px;
+}
+
+.content-trending .trending-profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-trending .trending-profile-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/assets/pictures/adriano-pinto-j4VUYdQJEj8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
 }
